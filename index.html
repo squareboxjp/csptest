@@ -23,7 +23,7 @@ window.addEventListener('message', function(e) {
 })
     window.onload = function() {
       var badregion = document.getElementById("badregion")
-      badregion.on("click",function(){
+      badregion.addEventListener('click',function (){
         var otohimebutton = document.getElementsByClassName("banner")[0]
           otohimebutton.click()
       });
