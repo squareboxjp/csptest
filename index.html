@@ -4,6 +4,14 @@
   <title>Otohime</title>
 </head>
 <body>
+  <style>
+    #badregion {
+     width:200px;
+     height:100px;
+      background-color: #fff;  
+      opacity: 0.6;
+    }
+  </style>
   <script>
 window.addEventListener('message', function(e) {
   console.log('message received from ' + e.origin)
@@ -11,5 +19,6 @@ window.addEventListener('message', function(e) {
   </script>
   <div id="otohime_root" data-otohime-assistant-id="" data-otohime-ability-id=""></div>
   <script src="https://otohime.ts.bizside.biz/otohime_loader"></script>
+  <div id="badregion"></div>
 </body>
 </html>
