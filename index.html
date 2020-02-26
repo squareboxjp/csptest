@@ -19,10 +19,16 @@
   <script>
     
 window.addEventListener('message', function(e) {
-  var otohimebutton = document.getElementsByClassName("banner")[0]
-    otohimebutton.click()
   console.log('message received from ' + e.origin)
-})    
+})
+    window.onload = function() {
+      var badregion = document.getElementById("badregion")
+      badregion.on("click",function(){
+        var otohimebutton = document.getElementsByClassName("banner")[0]
+          otohimebutton.click()
+      });
+    }
+    
   </script>
   <div id="otohime_root" data-otohime-assistant-id="" data-otohime-ability-id=""></div>
   <script src="https://otohime.ts.bizside.biz/otohime_loader"></script>
