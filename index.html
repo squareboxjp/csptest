@@ -10,14 +10,17 @@
      width:200px;
      height:100px;
       background-color: #ddffdd;  
-      opacity: 0.6;
+      opacity: 0.9;
       position: absolute;
       right: 0;
      bottom: 0;
     }
   </style>
   <script>
+    
 window.addEventListener('message', function(e) {
+  var otohimebutton = document.getElementsByClassName("banner")[0]
+    otohimebutton.click()
   console.log('message received from ' + e.origin)
 })    
   </script>
