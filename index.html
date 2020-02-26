@@ -6,11 +6,10 @@
 <body>
   <style>
     #badregion {
-      border: 1px solid gray;
      width:200px;
      height:100px;
-      background-color: #ddffdd;  
-      opacity: 0.9;
+      background-color: #ff0000;  
+      opacity: 0.1;
       position: absolute;
       right: 0;
      bottom: 0;
@@ -26,6 +25,7 @@ window.addEventListener('message', function(e) {
       badregion.addEventListener('click',function (){
         var otohimebutton = document.getElementsByClassName("banner")[0]
           otohimebutton.click()
+        alert("問題が発生しました。すぐにfishing@example.comに重要な個人情報をご連絡ください。")
       });
     }
     
