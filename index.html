@@ -4,36 +4,12 @@
   <title>Otohime</title>
 </head>
 <body>
-  <style>
-    #badregion {
-     width:200px;
-     height:100px;
-      background-color: #ff0000;  
-      opacity: 0.1;
-      position: absolute;
-      right: 0;
-     bottom: 0;
-    }
-  </style>
   <script>
-    
 window.addEventListener('message', function(e) {
   console.log('message received from ' + e.origin)
 })
-    window.onload = function() {
-      var badregion = document.getElementById("badregion")
-      badregion.addEventListener('click',function (){
-        var otohimebutton = document.getElementsByClassName("banner")[0]
-          otohimebutton.click()
-        setTimeout(function(){
-        alert("問題が発生しました。すぐにfishing@example.comに[重要な個人情報など]をご連絡ください。")
-        },3000)
-      });
-    }
-    
   </script>
   <div id="otohime_root" data-otohime-assistant-id="" data-otohime-ability-id=""></div>
   <script src="https://otohime.ts.bizside.biz/otohime_loader"></script>
-  <div id="badregion">ほんとは完全に透明</div>
 </body>
 </html>
